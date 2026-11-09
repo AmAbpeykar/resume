@@ -15,13 +15,19 @@ const geist = localFont({
   display: 'swap',
 });
 
-const vazirmatn = localFont({
-  src: '../fonts/vazirmatn-arabic.woff2',
-  variable: '--font-vazirmatn',
-  weight: '100 900',
+const shabnam = localFont({
+  src: [
+    { path: '../fonts/Shabnam.woff', weight: '400' },
+    { path: '../fonts/Shabnam-Medium.woff2', weight: '500' },
+    { path: '../fonts/Shabnam-Bold.woff2', weight: '700' },
+  ],
+  variable: '--font-shabnam',
   display: 'swap',
   preload: false,
   adjustFontFallback: false,
+  declarations: [
+    { prop: 'unicode-range', value: 'U+0600-06FF, U+0750-077F, U+08A0-08FF, U+200C-200F, U+FB50-FDFF, U+FE70-FEFF' },
+  ],
 });
 
 type Props = { params: Promise<{ locale: string }> };
@@ -76,9 +82,10 @@ export default async function LocaleLayout({ children, params }: Props & { child
   const { locale } = await params;
   if (!hasLocale(routing.locales, locale)) notFound();
   setRequestLocale(locale);
+  const isPersian = locale === 'fa';
 
   return (
-    <html lang={locale} dir={locale === 'fa' ? 'rtl' : 'ltr'} className={geist.variable + ' ' + vazirmatn.variable}>
+    <html lang={locale} dir={isPersian ? 'rtl' : 'ltr'} className={isPersian ? geist.variable + ' ' + shabnam.variable : geist.variable}>
       <body>{children}</body>
     </html>
   );

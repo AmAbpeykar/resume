@@ -30,7 +30,7 @@ body {
   font-family: var(--font-geist, system-ui), sans-serif;
   -webkit-font-smoothing: antialiased;
 }
-[dir="rtl"] body { font-family: var(--font-vazirmatn), var(--font-geist), Tahoma, sans-serif; }
+[dir="rtl"] body { font-family: var(--font-shabnam), var(--font-geist), Tahoma, sans-serif; }
 ::selection { color: #120b24; background: #d1baff; }
 :focus-visible { outline: 2px solid var(--cyan); outline-offset: 5px; }
 section[id] { scroll-margin-block-start: 98px; }
@@ -101,7 +101,7 @@ button { cursor: pointer; }
 }
 .micro { font-size: .66rem; letter-spacing: .115em; }
 [dir="rtl"] :is(.eyebrow, .micro) {
-  font-family: var(--font-vazirmatn), var(--mono);
+  font-family: var(--font-shabnam), var(--mono);
   font-size: .79rem;
   letter-spacing: 0;
 }
