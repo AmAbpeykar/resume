@@ -1,0 +1,140 @@
+{
+  "meta": {
+    "title": "Mohammad Amin Abpeykar · Senior Full-Stack & Mobile Developer",
+    "description": "Portfolio of Mohammad Amin Abpeykar, a senior full-stack and mobile developer building production web applications, mobile products, and scalable backend systems."
+  },
+  "common": {
+    "name": "Mohammad Amin Abpeykar",
+    "skip": "Skip to main content",
+    "backToTop": "Back to top"
+  },
+  "nav": {
+    "label": "Main navigation",
+    "language": "Site language",
+    "open": "Open navigation",
+    "close": "Close navigation",
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "experience": "Experience",
+    "philosophy": "Philosophy",
+    "contact": "Contact"
+  },
+  "hero": {
+    "eyebrow": "INDEPENDENT DEVELOPER PORTFOLIO",
+    "firstName": "Mohammad Amin",
+    "lastName": "Abpeykar",
+    "role": "Senior Full-Stack & Mobile Developer",
+    "tagline": "Building Scalable Systems. Crafting Digital Experiences.",
+    "work": "Explore My Work",
+    "about": "About Me",
+    "portraitAlt": "Mohammad Amin Abpeykar in profile",
+    "portraitLabel": "DEVELOPER PROFILE",
+    "imageIndex": "FIG. 01",
+    "scroll": "Scroll to explore",
+    "fields": "WEB / MOBILE / BACKEND"
+  },
+  "about": {
+    "label": "ABOUT ME",
+    "title": "I build software for the real world.",
+    "intro": "I’m Mohammad Amin Abpeykar, a senior full-stack and mobile developer with six years of professional software development experience, including three years as a Senior Full-Stack Developer.",
+    "body": "I take products from architecture to launch, designing backend systems and REST APIs, building web experiences, and shipping mobile applications. Once a product goes live, I work on keeping it reliable and improving how it performs.",
+    "years": "Years in software development",
+    "senior": "Years as a Senior Full-Stack Developer",
+    "range": "Web, mobile & backend expertise",
+    "workbench": "ENGINEERING FOCUS"
+  },
+  "skills": {
+    "label": "TECHNICAL ECOSYSTEM",
+    "title": "A connected stack.",
+    "intro": "Explore my skills across web and mobile, backend development, data, architecture, and software quality.",
+    "map": "Technology groups",
+    "core": "SYSTEM CORE",
+    "selector": "SELECT A NODE",
+    "stack": "TOOLKIT",
+    "categories": {
+      "web": { "title": "Web & Mobile", "description": "Web interfaces, React Native apps, and native builds." },
+      "backend": { "title": "Backend & Agents", "description": "Backend frameworks, APIs, background jobs, and development with MCP and agents." },
+      "data": { "title": "Data & Storage", "description": "Relational and document databases, caching, search, and object storage." },
+      "architecture": { "title": "Architecture", "description": "Design patterns, software design principles, and system architecture." },
+      "quality": { "title": "Quality & Operations", "description": "Testing, observability, Ubuntu, and collaboration on SEO performance." }
+    },
+    "items": {
+      "seo": "Collaborating with the SEO lead to improve search performance"
+    }
+  },
+  "projects": {
+    "label": "SELECTED WORK",
+    "title": "From idea to production.",
+    "intro": "Two products with different demands, from shipping a mobile app to engineering the workflows behind healthcare reservations and payments.",
+    "details": "Engineering details",
+    "closeDetails": "Close project details",
+    "visit": "View live project",
+    "dambal": {
+      "type": "FITNESS · MOBILE PRODUCT",
+      "summary": "A mobile fitness platform for coaches and the people they train.",
+      "role": "Full-Stack & Mobile Developer · Independent Product Developer",
+      "description": "A launched fitness platform that connects coaches and users through a mobile app. Coaches manage training plans, while users follow their programs and engage with fitness content.",
+      "visual": "MOBILE / REAL TIME",
+      "highlights": [
+        "Designed and implemented the mobile app architecture and backend APIs.",
+        "Built coach and user workflows, authentication, authorization, and training plan management.",
+        "Implemented social content, engagement, search, and real-time notifications.",
+        "Prepared Android and iOS release builds."
+      ]
+    },
+    "drsinu": {
+      "type": "HEALTHCARE · WEB PLATFORM",
+      "summary": "A healthcare platform for service bookings, payments, and administration.",
+      "role": "Full-Stack Developer · Backend & Systems Engineering",
+      "description": "A healthcare platform built around service reservations, payment integrations, financial workflows, and the tools administrators use to manage them.",
+      "visual": "SYSTEMS / DATA FLOW",
+      "highlights": [
+        "Designed APIs and database structures for reservations and administrative operations.",
+        "Integrated payments and implemented the platform’s financial workflows.",
+        "Built administrative interfaces and background processing.",
+        "Worked on production deployment, infrastructure, and CI/CD."
+      ]
+    }
+  },
+  "experience": {
+    "label": "PROFESSIONAL EXPERIENCE",
+    "title": "From the interface to production.",
+    "intro": "Six years building software, including three years in a senior full-stack role.",
+    "collaborations": "Professional collaborations",
+    "roles": {
+      "product": { "title": "Web & mobile engineering", "description": "Full-stack web application development and cross-platform mobile product development." },
+      "systems": { "title": "Backend & data systems", "description": "Backend API architecture, database design, and integration with production infrastructure." },
+      "operations": { "title": "Deployment & maintenance", "description": "Releasing software, maintaining production systems, and improving performance as products evolve." }
+    },
+    "organizations": ["Sima Danesh", "Zanjire Novin Keshavarzi", "Simorgh Abadis"]
+  },
+  "philosophy": {
+    "label": "ENGINEERING PHILOSOPHY",
+    "title": "Beyond Writing Code",
+    "intro": "How I make decisions about software that people will use and teams will maintain.",
+    "principles": {
+      "architecture": { "title": "Architecture First", "description": "Define clear boundaries and data contracts early so new features have a place to fit as the product grows." },
+      "production": { "title": "Production Mindset", "description": "Think through deployment, failure modes, and maintenance while the system is being built." },
+      "performance": { "title": "Performance Matters", "description": "Trace slow requests and interactions to their source, then improve data access, caching, or rendering where it makes a difference." },
+      "ownership": { "title": "Full Product Ownership", "description": "Follow a requirement through architecture, implementation, launch, and the work that comes after release." },
+      "learning": { "title": "Continuous Learning", "description": "Explore backend patterns and developer tooling, and apply what solves a problem the project actually has." }
+    }
+  },
+  "contact": {
+    "label": "CONTACT",
+    "titleFirst": "Let's Build Something",
+    "titleLast": "Extraordinary.",
+    "intro": "I’m open to software development opportunities, professional collaborations, and conversations about engineering.",
+    "phone": "Call",
+    "email": "Email",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "profile": "Professional profile"
+  },
+  "footer": {
+    "credit": "Senior Full-Stack & Mobile Developer",
+    "end": "END OF TRANSMISSION"
+  }
+}
