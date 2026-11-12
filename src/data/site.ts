@@ -15,6 +15,8 @@ const email = (process.env.PORTFOLIO_EMAIL ?? 'amaabpeykar@gmail.com').trim();
 const emailHref = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
   ? 'mailto:' + encodeURIComponent(email).replace('%40', '@')
   : undefined;
+const github = webUrl(process.env.PORTFOLIO_GITHUB ?? 'https://github.com/AmAbpeykar');
+const githubHandle = github?.pathname.match(/^\/([^/]+)\/?$/)?.[1];
 const linkedin = webUrl(process.env.PORTFOLIO_LINKEDIN ?? 'https://www.linkedin.com/in/aimeup/');
 const linkedinHandle = linkedin?.pathname.match(/^\/in\/([^/]+)\/?$/)?.[1];
 
@@ -27,7 +29,7 @@ export const site = {
   contact: {
     phone: { href: 'tel:+98' + phone.slice(1), value: phone },
     email: emailHref ? { href: emailHref, value: email } : undefined,
-    github: externalContact(webUrl(process.env.PORTFOLIO_GITHUB)),
+    github: externalContact(github, githubHandle),
     linkedin: externalContact(linkedin, linkedinHandle),
     profile: externalContact(webUrl(process.env.PORTFOLIO_PROFILE_URL)),
   },
