@@ -45,13 +45,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const title = t('title');
   const description = t('description');
   const canonical = site.origin ? new URL(localeHref(locale), site.origin) : undefined;
-  const socialImage = site.origin ? new URL('/images/profile.jpg', site.origin) : undefined;
+  const socialImage = site.origin ? new URL(site.portrait.src, site.origin) : undefined;
 
   return {
     title,
     description,
     metadataBase: site.origin,
-    icons: { icon: '/mark.svg' },
+    icons: { icon: { url: '/mark-aa.svg', type: 'image/svg+xml' } },
+    verification: { google: site.googleVerification },
     alternates: site.origin ? {
       canonical,
       languages: {
@@ -67,7 +68,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       url: canonical,
       locale: locale === 'fa' ? 'fa_IR' : 'en_US',
       alternateLocale: [locale === 'fa' ? 'en_US' : 'fa_IR'],
-      images: socialImage ? [{ url: socialImage, width: 640, height: 640 }] : undefined,
+      images: socialImage ? [{ url: socialImage, width: site.portrait.width, height: site.portrait.height }] : undefined,
     },
     twitter: {
       card: socialImage ? 'summary_large_image' : 'summary',

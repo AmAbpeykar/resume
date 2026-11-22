@@ -29,23 +29,25 @@ export async function Contact() {
             {t('titleFirst')}{' '}<span>{t('titleLast')}</span>
           </h2>
           <p>{t('intro')}</p>
-          {links.length > 0 && (
+        </Reveal>
+        {links.length > 0 && (
+          <Reveal className="contact-link-reveal" once={false}>
             <ul className="contact-links">
               {links.map(({ id, icon: Icon, href, value }) => (
                 <li key={id}>
                   <a className="button button-ghost contact-link" href={href}>
-                    <span className="contact-link-icon"><Icon size={17} aria-hidden="true" /></span>
-                    <span className="contact-link-copy">
+                    <span className="contact-link-title">
+                      <span className="contact-link-icon"><Icon size={17} aria-hidden="true" /></span>
                       <span>{t(id)}</span>
-                      {value && <bdi dir="ltr">{value}</bdi>}
                     </span>
+                    {value && <bdi dir="ltr">{value}</bdi>}
                     <ArrowUpRight size={14} className="directional" aria-hidden="true" />
                   </a>
                 </li>
               ))}
             </ul>
-          )}
-        </Reveal>
+          </Reveal>
+        )}
       </div>
     </section>
   );

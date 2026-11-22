@@ -12,6 +12,8 @@ export type NavigationProps = {
   name: string;
 };
 
+const brandName = 'AimeUp';
+
 export function Navigation({ locale, labels, name, active }: NavigationProps & { active: Section }) {
   const [open, setOpen] = useState(false);
   const toggle = useRef<HTMLButtonElement>(null);
@@ -51,8 +53,8 @@ export function Navigation({ locale, labels, name, active }: NavigationProps & {
       />
       <header className="site-header">
         <nav aria-label={labels.label} className="navigation">
-          <a href="#home" className="brand" aria-label={'MA. · ' + name + ' · ' + labels.home} onClick={() => setOpen(false)}>
-            <span className="brand-mark" aria-hidden="true">MA<span>.</span></span>
+          <a href="#home" className="brand" aria-label={[brandName, name, labels.home].join(' · ')} onClick={() => setOpen(false)}>
+            <span className="brand-mark brand-wordmark" aria-hidden="true">{brandName}</span>
           </a>
           <ul className="nav-links">
             {sections.map((section) => (

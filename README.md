@@ -1,4 +1,4 @@
-# Mohammad Amin Abpeykar · Portfolio
+# Amin Abpeykar · Portfolio
 
 A bilingual Next.js portfolio. English uses /en/ and Persian uses /fa/ with a right-to-left layout. The root route opens English.
 

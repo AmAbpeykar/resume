@@ -1,10 +1,10 @@
 {
   "meta": {
-    "title": "Mohammad Amin Abpeykar · Senior Full-Stack & Mobile Developer",
-    "description": "Portfolio of Mohammad Amin Abpeykar, a senior full-stack and mobile developer building production web applications, mobile products, and scalable backend systems."
+    "title": "Amin Abpeykar · Senior Full-Stack & Mobile Developer",
+    "description": "Portfolio of Amin Abpeykar, a senior full-stack and mobile developer building production web applications, mobile products, and scalable backend systems."
   },
   "common": {
-    "name": "Mohammad Amin Abpeykar",
+    "name": "Amin Abpeykar",
     "skip": "Skip to main content",
     "backToTop": "Back to top"
   },
@@ -23,13 +23,13 @@
   },
   "hero": {
     "eyebrow": "INDEPENDENT DEVELOPER PORTFOLIO",
-    "firstName": "Mohammad Amin",
+    "firstName": "Amin",
     "lastName": "Abpeykar",
     "role": "Senior Full-Stack & Mobile Developer",
     "tagline": "Building Scalable Systems. Crafting Digital Experiences.",
     "work": "Explore My Work",
     "about": "About Me",
-    "portraitAlt": "Mohammad Amin Abpeykar in profile",
+    "portraitAlt": "Amin Abpeykar in profile",
     "portraitLabel": "DEVELOPER PROFILE",
     "imageIndex": "FIG. 01",
     "scroll": "Scroll to explore",
@@ -38,7 +38,7 @@
   "about": {
     "label": "ABOUT ME",
     "title": "I build software for the real world.",
-    "intro": "I’m Mohammad Amin Abpeykar, a senior full-stack and mobile developer with six years of professional software development experience, including three years as a Senior Full-Stack Developer.",
+    "intro": "I’m Amin Abpeykar, a senior full-stack and mobile developer with six years of professional software development experience, including three years as a Senior Full-Stack Developer.",
     "body": "I take products from architecture to launch, designing backend systems and REST APIs, building web experiences, and shipping mobile applications. Once a product goes live, I work on keeping it reliable and improving how it performs.",
     "years": "Years in software development",
     "senior": "Years as a Senior Full-Stack Developer",

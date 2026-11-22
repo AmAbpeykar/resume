@@ -2,6 +2,7 @@ import { ArrowDown, ArrowDownRight, ScanLine, Sparkle } from 'lucide-react';
 import Image from 'next/image';
 import { getTranslations } from 'next-intl/server';
 import { MagneticLink } from '@/components/animations/magnetic-link';
+import { site } from '@/data/site';
 import { PortraitMotion } from './portrait-motion';
 import { Starfield } from './starfield';
 
@@ -43,7 +44,7 @@ export async function Hero() {
               <div className="portrait-decoration portrait-decoration-end" aria-hidden="true"><Sparkle size={13} /></div>
               <figure className="portrait-frame">
                 <div className="portrait-photo">
-                  <Image src="/images/profile.webp" alt={t('portraitAlt')} width={640} height={640} loading="eager" fetchPriority="high" />
+                  <Image src={site.portrait} alt={t('portraitAlt')} loading="eager" fetchPriority="high" />
                   <div className="portrait-vignette" aria-hidden="true" />
                 </div>
                 <span className="frame-corner corner-1" aria-hidden="true" />

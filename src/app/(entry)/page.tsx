@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { site } from '@/data/site';
 import { localeHref, routing } from '@/i18n/routing';
 import en from '@/messages/en.json';
 
@@ -6,7 +7,8 @@ export const metadata: Metadata = {
   title: en.meta.title,
   description: en.meta.description,
   robots: { index: false, follow: true },
-  icons: { icon: '/mark.svg' },
+  icons: { icon: { url: '/mark-aa.svg', type: 'image/svg+xml' } },
+  verification: { google: site.googleVerification },
 };
 
 export default function EntryPage() {

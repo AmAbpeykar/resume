@@ -1,3 +1,7 @@
+/// <reference types="next/image-types/global" />
+
+import portrait from '../../new.jpg';
+
 function webUrl(value?: string) {
   if (!value?.trim()) return undefined;
 
@@ -25,7 +29,9 @@ function externalContact(url?: URL, value?: string) {
 }
 
 export const site = {
+  portrait,
   origin: siteUrl ? new URL(siteUrl.origin) : undefined,
+  googleVerification: 'zliUSA-OJOidISBh55y3aYSlFygHpy0nILiYNftPzjU',
   contact: {
     phone: { href: 'tel:+98' + phone.slice(1), value: phone },
     email: emailHref ? { href: emailHref, value: email } : undefined,
